@@ -9,7 +9,7 @@ before_script:
   - psql -U postgres -c "create database test_decide owner decide"
   - psql -U postgres -c "ALTER USER decide CREATEDB"
   - cd decide
-  - Python3 ./manage.py migrate
+  - python3 ./manage.py migrate
 language: python
 python:
   - "3.6"
